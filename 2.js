@@ -2874,113 +2874,185 @@ function gl(O, g, yT, kb, J, k, X) {
   X[kb(yT.k)](O[kb(yT.X)]);
 }
 
-function gy(o, MD, MI, kP, O, g, J, k, X, a, h) {
+// function gy(o, MD, MI, kP, O, g, J, k, X, a, h) {
+//   console.log("we are inside gy function");
+//   MD = {
+//     o: 722,
+//     O: 1203,
+//     g: 801,
+//     J: 922,
+//     k: 933,
+//     X: 1328,
+//     a: 1053,
+//     h: 698,
+//     m: 1157,
+//     M: 1122,
+//     G: 972,
+//     T: 657,
+//     c: 1125,
+//     W: 752,
+//     E: 904,
+//     R: 1231,
+//     l: 924,
+//     s: 559,
+//     Y: 1050,
+//     S: 1299,
+//     Z: 1181,
+//     j: 918,
+//     Q: 1025,
+//     P: 975,
+//     C: 877,
+//     I: 668,
+//     U: 827,
+//     D: 727,
+//     V: 1157,
+//     d: 1531,
+//     v: 871,
+//     K: 827,
+//     n: 705,
+//   };
+//   MI = {
+//     o: 770,
+//     O: 1594,
+//     g: 1064,
+//     J: 1156,
+//     k: 981,
+//     X: 570,
+//     a: 1157,
+//     h: 805,
+//     m: 1157,
+//     M: 1442,
+//     G: 1109,
+//   };
+//   kP = JT;
+//   O = {
+//     nIhIm: function (M, G) {
+//       return M(G);
+//     },
+//     RdqUl: kP(MD.o),
+//     kMccV: kP(MD.O),
+//     MoQnQ: kP(MD.g),
+//     BSrzP: kP(MD.J),
+//     VziZb: kP(MD.k),
+//   };
+//   g = Oe[kP(MD.X)](gW(gT()));
+//   J = false;
+//   if (isNaN(g) || g < 50) {
+//     if (kP(MD.a) !== kP(MD.h)) {
+//       o();
+//       return;
+//     } else {
+//       return undefined;
+//     }
+//   }
+//   k = Oe[kP(MD.m)][kP(MD.M)](kP(MD.G));
+//   X = ON[kP(MD.T)](O[kP(MD.c)]);
+//   X.id = O[kP(MD.W)];
+//   X[kP(MD.E)] = O[kP(MD.R)];
+//   X[kP(MD.l)][kP(MD.s)] = O[kP(MD.Y)];
+//   a = ON[kP(MD.T)](O[kP(MD.S)]);
+//   a[kP(MD.Z)] = kP(MD.j);
+//   a[kP(MD.Q)] = k;
+//   a[kP(MD.P)][kP(MD.C)](kP(MD.I));
+//   X[kP(MD.U)](a);
+//   Oe[kP(MD.m)][kP(MD.D)]();
+//   Oe[kP(MD.V)][kP(MD.d)]();
+//   Oe[kP(MD.m)][kP(MD.v)]()[kP(MD.K)](X);
+//   h = 0;
+//   a[kP(MD.n)] = m;
+//   h = setInterval(function () {
+//     if (gM) {
+//       m();
+//     }
+//   }, 150);
+//   function m(kC, G) {
+//     kC = kP;
+//     if (J) {
+//       return;
+//     }
+//     J = true;
+//     G = Oe[kC(MI.o)][kC(MI.O)][kC(MI.g)](kC(MI.J));
+//     if (G) {
+//       G[kC(MI.k)][kC(MI.X)](G);
+//     }
+//     Oe[kC(MI.a)][kC(MI.h)]();
+//     Oe[kC(MI.m)][kC(MI.M)]();
+//     if (h) {
+//       O[kC(MI.G)](clearInterval, h);
+//     }
+//     o();
+//   }
+// }
+
+function gy(callback) {
   console.log("we are inside gy function");
-  MD = {
-    o: 722,
-    O: 1203,
-    g: 801,
-    J: 922,
-    k: 933,
-    X: 1328,
-    a: 1053,
-    h: 698,
-    m: 1157,
-    M: 1122,
-    G: 972,
-    T: 657,
-    c: 1125,
-    W: 752,
-    E: 904,
-    R: 1231,
-    l: 924,
-    s: 559,
-    Y: 1050,
-    S: 1299,
-    Z: 1181,
-    j: 918,
-    Q: 1025,
-    P: 975,
-    C: 877,
-    I: 668,
-    U: 827,
-    D: 727,
-    V: 1157,
-    d: 1531,
-    v: 871,
-    K: 827,
-    n: 705,
-  };
-  MI = {
-    o: 770,
-    O: 1594,
-    g: 1064,
-    J: 1156,
-    k: 981,
-    X: 570,
-    a: 1157,
-    h: 805,
-    m: 1157,
-    M: 1442,
-    G: 1109,
-  };
-  kP = JT;
-  O = {
-    nIhIm: function (M, G) {
-      return M(G);
-    },
-    RdqUl: kP(MD.o),
-    kMccV: kP(MD.O),
-    MoQnQ: kP(MD.g),
-    BSrzP: kP(MD.J),
-    VziZb: kP(MD.k),
-  };
-  g = Oe[kP(MD.X)](gW(gT()));
-  J = false;
-  if (isNaN(g) || g < 50) {
-    if (kP(MD.a) !== kP(MD.h)) {
-      o();
-      return;
-    } else {
-      return undefined;
-    }
+
+  const cookieName =
+    _cf_chl_opt.cType === "interactive"
+      ? "cf_chl_rc_i"
+      : _cf_chl_opt.cType === "managed"
+        ? "cf_chl_rc_m"
+        : "cf_chl_rc_ni";
+
+  const rawCookieValue = document.cookie
+    .split(";")
+    .map((entry) => entry.trim())
+    .find((entry) => entry.startsWith(`${cookieName}=`));
+  const cookieValue = rawCookieValue
+    ? parseInt(rawCookieValue.slice(cookieName.length + 1), 10)
+    : NaN;
+
+  if (Number.isNaN(cookieValue) || cookieValue < 50) {
+    callback();
+    return;
   }
-  k = Oe[kP(MD.m)][kP(MD.M)](kP(MD.G));
-  X = ON[kP(MD.T)](O[kP(MD.c)]);
-  X.id = O[kP(MD.W)];
-  X[kP(MD.E)] = O[kP(MD.R)];
-  X[kP(MD.l)][kP(MD.s)] = O[kP(MD.Y)];
-  a = ON[kP(MD.T)](O[kP(MD.S)]);
-  a[kP(MD.Z)] = kP(MD.j);
-  a[kP(MD.Q)] = k;
-  a[kP(MD.P)][kP(MD.C)](kP(MD.I));
-  X[kP(MD.U)](a);
-  Oe[kP(MD.m)][kP(MD.D)]();
-  Oe[kP(MD.V)][kP(MD.d)]();
-  Oe[kP(MD.m)][kP(MD.v)]()[kP(MD.K)](X);
-  h = 0;
-  a[kP(MD.n)] = m;
-  h = setInterval(function () {
+
+  const buttonLabel = gI("human_button_text") || "";
+
+  const container = document.createElement("div");
+  container.id = "ie-container";
+  container.style.height = "10 em";
+  container.style.display = "flex";
+
+  const button = document.createElement("input");
+  button.type = "button";
+  button.value = buttonLabel;
+  button.classList.add("ctp-button");
+  container.appendChild(button);
+
+  JJ();
+  JO();
+  gt().appendChild(container);
+
+  let handled = false;
+  let intervalId = setInterval(() => {
     if (gM) {
-      m();
+      handleClick();
     }
   }, 150);
-  function m(kC, G) {
-    kC = kP;
-    if (J) {
+
+  button.onclick = handleClick;
+
+  function handleClick() {
+    if (handled) {
       return;
     }
-    J = true;
-    G = Oe[kC(MI.o)][kC(MI.O)][kC(MI.g)](kC(MI.J));
-    if (G) {
-      G[kC(MI.k)][kC(MI.X)](G);
+    handled = true;
+
+    const existing = _cf_chl_opt.eyNpQ6.querySelector("#ie-container");
+    if (existing && existing.parentNode) {
+      existing.parentNode.removeChild(existing);
     }
-    Oe[kC(MI.a)][kC(MI.h)]();
-    Oe[kC(MI.m)][kC(MI.M)]();
-    if (h) {
-      O[kC(MI.G)](clearInterval, h);
+
+    Jg();
+    Jk();
+
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = 0;
     }
-    o();
+
+    callback();
   }
 }
 
