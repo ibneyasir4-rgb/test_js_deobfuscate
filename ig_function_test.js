@@ -1,6 +1,6 @@
 "use strict";
 const { webcrypto } = require("crypto");
-const crypto = webcrypto;
+const crypto = webcrypto; // for IE 11
 
 let i1 = "kqSO0UzWt2i85Z47Gew-PpHVxhRC1I3+KlmbsrLBYXyo6jMdaJnNvuDfgQ9FETA$c";
 let i2 = BigInt(
@@ -941,7 +941,7 @@ function ir(V, YO) {
   ];
 }
 
-module.exports = { ig, ii, iq, ir };
+// module.exports = { ig, ii, iq, ir };
 
 var J = {
   GEopY8: "interactive",
@@ -953,7 +953,7 @@ var J = {
   NDrfN1: 1,
   AtmD4: "1758561432",
   WVeXw8:
-    "rby3enYgDFZSPJaiafnI50jn6lA2ocQXiBvy9CKQCp8-1758561432-1.2.1.1-bQl2QRYEHIoO.RRgbpCiE57DAnlex8ruoA9DotOR4_oAwuNqcQcxeemcKgvVJgpFyrTbnBOrosBL2lU9hQpW7_BV6oiUC82ud2sf4pmXQLPF5XZKNp0fwywWi4V_v7MoT1_YPmD8ytvKAwu8MXP7fhhJnrvpDr_jFXb1CHzeGHwsHTmALEr1fIcYP.aGING9Fvf3ZTk_d8oLv5QRF._IBY3_riEo4cSvUsxtcBf7OUaxobLX3VqOCoUoU7stVu8c3pRWcaYS7jC1QLZifbjrNhIWZZl6ruPlaRmRonPIlG4VY7SGIaN9lXsFRCg7leYtnd3Vfbuu724suOYXQy2Yi6uAQBI3b0TafWGHrw26fvspG1UengtgnCVsyszftKMl2A0Qr.grhBDYbkhUBOrIqLqwVfTP53S_FEOZ8.pZfScFc1d1k3mPXEq3G2uk0_SabCSiRB.rvSsHpSrX.e1djMdtzkoxae17WfoYB5c9EgCmQh2gPiP6Sdc9zWn30c.OCbQxjkPNlEvom5wZpxRGn0H9XEpkdSIynRq_sS4r.jd40wgX2WWExJqXz3GKagUlNUa1wBCBI3sNTHZVAeTqSYN7tbgbC5zz238M.6atxqVQFzWrgQ0z3TsFbiUEyL4SszGWirs2rO2F8ncrjrIu6XClbObSNLoTCVBKvLVDHUg3Y_XcQh5MoG4ozNXTCDieU9a23_tVQWUtC7TPd4ANrgwJxuuI3ihzgG9at1IGnBIElaEhrvaOKzmtejCeyPCtbzOBUaPPWQvuh_RZ_HOFZ3lRp53zLXzYnKCinHowJ0MRjCSL.rD_qtiamGaeinBrM8O0wykFwRZDivujT0D6J0iWmvcFhOocymt5wJuRjccpO2k6wgtzI32FPQM3TnNM3i.zI1LGNPJzKqYLHg5c0lU6meybw_1fQaTmbqaRojVh0B7FDS2DT_3xZd_WDmlf7jJySfng2qRznEwJKVy4Aqs2rsnqBwHxxf.YkzNJAA40flz7HGiP6wLMfkfK.sT.grj4uRtzvhHTbOLrss6DjOOcPBUwqFdTqnUayhLPBH8",
+    "rby3enYgDFZSPJaiafnI50jn6lA2ocQXiBvy9CKQCp8-1758561432-1.2.1.1-bQl2QRYEHIoO.RRgbpCiE57DAnlex8ruoA9DotOR4_oAwuNqcQcxeemcKgvVJgpFyrTbnBOrosBL2lU9hQpW7_BV6oiUC82ud2sf4pmXQLPF5XZKNp0fwywWi4V_v7MoT1_YPmD8ytvKAwu8MXP7fhhJnrvpDr_jFXb1CHzeGHwsHTmALEr1fIcYP.aGING9Fvf3ZTk_d8oLv5QRF._IBY3_riEo4cSvUsxtcBf7OUaxobLX3VqOCoUoU7stVu8c3pRWcaYS7jC1QLZifbjrNhIWZZl6ruPlaRmRonPIlG4VY7SGIaN9lXsFRCg7leYtnd3Vfbuu724suOYXQy2Yi6uAQBI3b0TafWGHrw26fvspG1UengtgnCVsyszftKMl2A0Qr.grhBDYbkhUBOrIqLqwVfTP53S_FEOZ8.pZfScFc1d1k3mPXEq3G2uk0_SabCSiRB.rvSsHpSrX.e1djMdtzkoxae17WfoYB5c9EgCmQh2gPiP6Sdc9zWn30c.OCbQxjkPNlEvom5wZpxRGn0H9XEpkdSIynRq_sS4r.jd40wgX2WWExJqXz3GKagUlNUa1wBCBI3sNTHZVAeTqSYN7tbgbC5zz238M.6atxqVQFzWrgQ0z3TsFbiUEyL4SszGWirs2rO2F8ncrjrIu6XClbObSNLoTCVBKvLVDHUg3Y_XcQh5MoG4ozNXTCDieU9a23_tVQWUtC7TPd4ANrgwJxuuI3ihzgG9at1IGnBIElaEhrvaOKzmtejCeyPCtbzOBUaPPWQvuh_RZ_HOFZ3lRp53zLXzYnKCinHowJ0MRjCSL.rD_qtiamGaeinBrM8O0wykFwRZDivujT0D6J0iWmvcFhOocymt5wJuRjccpO2k6wgtzI32FPQM3TnNM3i.zI1LGNPJzKqYLHg5c0lU6meybw_1fQaTmbqaRojVh0B7FDS2DT_3xZd_WDmlf7jJySfng2qRznEwJKVy4Aqs2rsnqBwHxxf.YkzNJAA40flz7HGiP6wLMfkfK.sT.grj4uRtzvhHTbOLrss6DjOOcPBUwqFdTqnUayhLPBH8", // set _cf_chl_opt.md
   jyTeM5: {
     hvAy2: 0,
     hvbi1: 0,
@@ -973,7 +973,275 @@ var J = {
   WKdxT1: "gPLF7",
 };
 
-if (require.main === module) {
-  const sample = { message: J, attempt: 1 };
-  console.log("ig(sample):", ig(sample));
+const https = require("https");
+const url = require("url");
+const fetch = (...args) =>
+  import("node-fetch").then(({ default: fetch }) => fetch(...args));
+
+// --- Cloudflare challenge extraction logic (from make_cf_urls.js) ---
+
+const START_URL = "https://www.bstn.com";
+const TIMEOUT_MS = 20000;
+
+const CF_ASSIGN_RE = /(?:window\.)?_cf_chl_opt\s*=\s*(\{.*?\});/s;
+const ORCH_RE =
+  /['"](?<path>\/cdn-cgi\/challenge-platform\/(?:h\/(?<fpwv>[a-zA-Z0-9_-]+)\/)?orchestrate\/chl_page\/v1\?ray=(?<ray>[a-f0-9]+))['"]/;
+const TOKEN_RE =
+  /(?<![A-Za-z0-9._-])(?<tok>\d{7,}:\d{7,}:[A-Za-z0-9._\-]{16,})/g;
+const HINT_RE = /(challenge-platform|\/flow\/ov1|\/b\/ov1|_cf_chl_opt)/;
+
+function jsObjToJsonLoose(s) {
+  s = s.replace(/([{,]\s*)([A-Za-z_$][A-Za-z0-9_$]*)\s*:/g, '$1"$2":');
+  s = s.replace(/(?<!\\)'/g, '"');
+  s = s.replace(/,\s*(?=[}\]])/g, "");
+  return s;
 }
+
+function extractCfOpts(html) {
+  const m = CF_ASSIGN_RE.exec(html);
+  if (!m) return { data: null, err: "no _cf_chl_opt assignment found" };
+  const raw = m[1];
+  const norm = jsObjToJsonLoose(raw);
+  try {
+    const data = JSON.parse(norm);
+    return {
+      data: {
+        cFPWv: String(data?.cFPWv ?? ""),
+        cRay: String(data?.cRay ?? ""),
+        cH: String(data?.cH ?? ""),
+        cType: String(data?.cType ?? ""),
+        md: String(data?.md ?? ""), // <-- extract _cf_chl_opt.md
+        chlApiUrl: data?.chlApiUrl,
+        chlApiSitekey: data?.chlApiSitekey,
+        chlApiACCH: data?.chlApiACCH,
+      },
+      err: null,
+    };
+  } catch (e) {
+    return { data: null, err: `json parse failed: ${e.message}` };
+  }
+}
+
+function extractOrchestrateFromHtml(html) {
+  const m = ORCH_RE.exec(html);
+  if (!m) return null;
+  const path = m.groups.path;
+  const fpwv = m.groups.fpwv || "";
+  const ray = m.groups.ray;
+  return { path, fpwv, ray };
+}
+
+function bestToken(jsText) {
+  TOKEN_RE.lastIndex = 0;
+  const matches = [];
+  let m;
+  while ((m = TOKEN_RE.exec(jsText)) !== null) {
+    matches.push({ tok: m.groups.tok, index: m.index });
+  }
+  if (!matches.length) return null;
+  const lines = jsText.split(/\r?\n/);
+  const hintLines = new Set();
+  for (let i = 0; i < lines.length; i++) {
+    if (HINT_RE.test(lines[i])) hintLines.add(i);
+  }
+  function lineOf(idx) {
+    return jsText.slice(0, idx).split(/\r?\n/).length - 1;
+  }
+  const scored = matches.map((mm) => {
+    const ln = lineOf(mm.index);
+    let score = 0;
+    if (hintLines.size) {
+      let minDist = Infinity;
+      for (const h of hintLines) {
+        const d = Math.abs(ln - h);
+        if (d < minDist) minDist = d;
+      }
+      score = -minDist;
+    }
+    return { score, len: mm.tok.length, tok: mm.tok };
+  });
+  scored.sort((a, b) => {
+    if (a.score !== b.score) return a.score - b.score;
+    return b.len - a.len;
+  });
+  return scored[0].tok;
+}
+
+function buildUrls(origin, token, cFPWv, cRay, cH, cType) {
+  origin = origin.replace(/\/+$/, "");
+  const h_prefix = cFPWv ? `h/${cFPWv}/` : "";
+  const flow = `${origin}/cdn-cgi/challenge-platform/${h_prefix}flow/ov1/${token}/${cRay}/${cH}`;
+  const telemetry = `${origin}/cdn-cgi/challenge-platform/h/${cFPWv}/b/ov1/${token}/${cRay}/${cH}/${cType}`;
+  return { flow, telemetry };
+}
+
+async function doFetch(url, timeoutMs, headers = {}) {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, {
+      method: "GET",
+      headers,
+      signal: controller.signal,
+      redirect: "follow",
+    });
+    const text = await res.text().catch(() => "");
+    clearTimeout(id);
+    return { ok: true, res, text };
+  } catch (e) {
+    clearTimeout(id);
+    return { ok: false, error: e };
+  }
+}
+
+async function getCfChallengeData() {
+  const headers = {
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    Pragma: "no-cache",
+  };
+  // 1) GET initial page
+  const got = await doFetch(START_URL, TIMEOUT_MS, headers);
+  if (!got.ok) throw new Error(`initial GET failed: ${got.error.message}`);
+  const r = got.res;
+  const html = got.text || "";
+  const finalUrl = r.url || START_URL;
+  let origin;
+  try {
+    const p = new URL(finalUrl);
+    origin = `${p.protocol}//${p.host}`;
+  } catch (e) {
+    origin = START_URL.replace(/\/$/, "");
+  }
+  // 2) Try extracting _cf_chl_opt
+  const { data: cf, err: cf_err } = extractCfOpts(html);
+  // 3) Try extracting orchestrate URL
+  const orch_info = extractOrchestrateFromHtml(html);
+  const cFPWv = cf ? cf.cFPWv || "" : orch_info ? orch_info.fpwv : "";
+  const cRay = cf ? cf.cRay || "" : orch_info ? orch_info.ray : "";
+  const cH = cf ? cf.cH || "" : "";
+  const cType = cf ? cf.cType || "" : "interactive";
+  if (!cRay) throw new Error("Could not extract cRay from page");
+  // 4) Orchestrate URL
+  let orch_path;
+  if (orch_info) {
+    orch_path = orch_info.path;
+  } else {
+    orch_path = `/cdn-cgi/challenge-platform/h/${cFPWv}/orchestrate/chl_page/v1?ray=${cRay}`;
+  }
+  const orch_url = new URL(orch_path, origin).toString();
+  // 5) Fetch orchestrate JS
+  const got2 = await doFetch(orch_url, TIMEOUT_MS, headers);
+  if (!got2.ok)
+    throw new Error(`orchestrate GET failed: ${got2.error.message}`);
+  const chl_js = got2.text || "";
+  const token = bestToken(chl_js);
+  if (!token) throw new Error("Could not extract token from orchestrate JS");
+  const { flow: flow_url, telemetry: telemetry_post_url } = buildUrls(
+    origin,
+    token,
+    cFPWv,
+    cRay,
+    cH,
+    cType
+  );
+  return {
+    flow_url,
+    telemetry_post_url,
+    cFPWv,
+    cRay,
+    cH,
+    cType,
+    token,
+    cf_chl: cH,
+    md: cf?.md, // <-- pass md value
+  };
+}
+
+function sendRequest(endpoint, body, headers = {}) {
+  const parsedUrl = url.parse(endpoint);
+  const options = {
+    hostname: parsedUrl.hostname,
+    port: parsedUrl.port || 443,
+    path: parsedUrl.path,
+    method: "POST",
+    headers: {
+      ...headers,
+      "Content-Length": Buffer.byteLength(body),
+    },
+    timeout: 5000,
+  };
+
+  const req = https.request(options, (res) => {
+    let data = "";
+    res.on("data", (chunk) => {
+      data += chunk;
+    });
+    res.on("end", () => {
+      console.log("Response:", data);
+    });
+  });
+
+  req.on("timeout", () => {
+    console.log("timeout or error");
+    req.abort();
+  });
+
+  req.on("error", (e) => {
+    console.log("timeout or error");
+  });
+
+  req.write(body);
+  req.end();
+}
+
+// --- Main logic: get challenge data, then send payload ---
+
+(async () => {
+  try {
+    const cfData = await getCfChallengeData();
+    // Set WVeXw8 to the real _cf_chl_opt.md value
+    J.WVeXw8 = cfData.md || J.WVeXw8;
+    const payload_data = { message: J, attempt: 1 };
+    console.log("cfData flow_url:", cfData.flow_url);
+    console.log("ig(payload_data):", ig(payload_data));
+
+    // --- Set all required headers here ---
+    const requestHeaders = {
+      accept: "*/*",
+      "accept-encoding": "gzip, deflate, br, zstd",
+      "accept-language": "en-US,en;q=0.9",
+      "cache-control": "no-cache",
+      "cf-chl": cfData.cH, // <-- use dynamic value here
+      "cf-chl-ra": "0",
+      "content-type": "text/plain;charset=UTF-8",
+      origin: "https://www.bstn.com",
+      pragma: "no-cache",
+      priority: "u=1, i",
+      referer: "https://www.bstn.com/eu_de",
+      "sec-ch-ua":
+        '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+      "sec-ch-ua-arch": '"x86"',
+      "sec-ch-ua-bitness": '"64"',
+      "sec-ch-ua-full-version": '"140.0.7339.185"',
+      "sec-ch-ua-full-version-list":
+        '"Chromium";v="140.0.7339.185", "Not=A?Brand";v="24.0.0.0", "Google Chrome";v="140.0.7339.185"',
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-model": '""',
+      "sec-ch-ua-platform": '"Windows"',
+      "sec-ch-ua-platform-version": '"10.0.0"',
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+    };
+
+    sendRequest(cfData.flow_url, ig(payload_data), requestHeaders);
+  } catch (err) {
+    console.error("Error:", err.message);
+  }
+})();
